@@ -120,7 +120,7 @@ async def crowns(ctx, amount):
       users = json.load(f) 
     id = users[f'{str(ctx.author.id)}']
     print(id + " Updated Their Crowns")
-    requests.get(f"https://e01a4dfd-fc0a-4703-a22a-cd2bc83bfaf1.id.repl.co/change/crown/{id}/{str(amount)}")
+    requests.get(f"{id}/{str(amount)}")
     embed=discord.Embed(title=f"Changed Crown Wins To {amount}", color=color)
     embed.set_footer(text="⚠️ This will update when u change a cosmetic in your locker or restart your game")
     await ctx.respond(embed=embed)
@@ -135,7 +135,7 @@ async def level(ctx, amount):
       users = json.load(f) 
     id = users[f'{str(ctx.author.id)}']
     print(id + " Updated Their Level")
-    requests.get(f"https://e01a4dfd-fc0a-4703-a22a-cd2bc83bfaf1.id.repl.co/change/level/{id}/{str(amount)}")
+    requests.get(f"{id}/{str(amount)}")
     embed=discord.Embed(title=f"Changed Level To {amount}", color=color)
     embed.set_footer(text="⚠️ This will update when u change a cosmetic in your locker or restart your game")
     await ctx.respond(embed=embed)
@@ -152,7 +152,7 @@ async def battlestars(ctx, amount):
       users = json.load(f) 
     id = users[f'{str(ctx.author.id)}']
     print(id + " Updated Their Battle Stars")
-    requests.get(f"https://e01a4dfd-fc0a-4703-a22a-cd2bc83bfaf1.id.repl.co/change/battlestars/{id}/{str(amount)}")
+    requests.get(f"{id}/{str(amount)}")
     embed=discord.Embed(title=f"Changed Battle Stars To {amount}", color=color)
     embed.set_footer(text="⚠️ This will update when u change a cosmetic in your locker or restart your game")
     await ctx.respond(embed=embed)
@@ -167,7 +167,7 @@ async def style_points(ctx, amount):
       users = json.load(f) 
     id = users[f'{str(ctx.author.id)}']
     print(id + " style points")
-    requests.get(f"https://e01a4dfd-fc0a-4703-a22a-cd2bc83bfaf1.id.repl.co/change/style_points/{id}/{str(amount)}")
+    requests.get(f{id}/{str(amount)}")
     embed=discord.Embed(title=f"Changed Omni Chips To {amount}", color=color)
     embed.set_footer(text="⚠️ This will update when u change a cosmetic in your locker or restart your game")
     await ctx.respond(embed=embed)
@@ -182,7 +182,7 @@ async def vbucks(ctx, amount):
       users = json.load(f) 
     id = users[f'{str(ctx.author.id)}']
     print(id + " vbucs")
-    requests.get(f"https://e01a4dfd-fc0a-4703-a22a-cd2bc83bfaf1.id.repl.co/change/vbucs/{id}/{str(amount)}")
+    requests.get(f"{id}/{str(amount)}")
     embed=discord.Embed(title=f"Changed vbucs To {amount}", color=color)
     embed.set_footer(text="⚠️ This will update when u restart your game")
     await ctx.respond(embed=embed)
