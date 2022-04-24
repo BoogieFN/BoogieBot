@@ -16,7 +16,7 @@ async def crown(request, id, amount):
 
 Javascript Backend Example
 ```js
-app.post('/api/v1/vbucks/:accountId/:vbucks', (req, res) => {
+app.post('/change/vbucs/:accountId/:vbucks', (req, res) => {
   const vbucks = req.params.vbucks;
   const accountId = req.params.accountId;
   config = JSON.parse(fs.readFileSync(`files/config/profiles/${accountId}/settings.json`));
