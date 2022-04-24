@@ -23,4 +23,5 @@ app.post('/api/v1/vbucks/:accountId/:vbucks', (req, res) => {
   
   config.Vbucks = vbucks
   fs.writeFileSync(`files/config/profiles/${accountId}/settings.json`, JSON.stringify(data, null, 2));
+  res.json({});
 })
