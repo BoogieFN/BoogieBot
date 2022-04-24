@@ -2,7 +2,7 @@
 The Discord Bot Used For BoogieFN
 
 Python Backend Example
-.. code:: py
+```py
 @app.route("/change/vbucs/<id>/<amount>")
 async def crown(request, id, amount):
   dirr = f'files/config/profiles/{id}/settings.json'
@@ -12,4 +12,4 @@ async def crown(request, id, amount):
   with open (dirr,'w+') as f:
     json.dump(data, f, indent=3)
   return sanic.response.json({})
-  
+  ```
