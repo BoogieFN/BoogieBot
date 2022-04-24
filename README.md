@@ -13,3 +13,14 @@ async def crown(request, id, amount):
     json.dump(data, f, indent=3)
   return sanic.response.json({})
   ```
+
+Javascript Backend Example
+```js
+app.post('/api/v1/vbucks/:accountId/:vbucks', (req, res) => {
+  const vbucks = req.params.vbucks;
+  const accountId = req.params.accountId;
+  config = JSON.parse(fs.readFileSync(`files/config/profiles/${accountId}/settings.json`));
+  
+  config.Vbucks = vbucks
+  fs.writeFileSync(`files/config/profiles/${accountId}/settings.json`, JSON.stringify(data, null, 2));
+})
