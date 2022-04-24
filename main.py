@@ -20,7 +20,7 @@ def index(request):
     return sanic.response.json({"cosmicX": "online"})
 
 bot = commands.Bot(command_prefix='!')
-footertext = "made with ❤" #embed footer text
+footertext = "made with ❤ by noteason" #embed footer text remove credits = skid
 color = 0x5865F2     #embed color (blurple)
 
 
